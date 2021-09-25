@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #4D96A9;
+    --purple: #855FB1;
+    --dark-purple: #28283D;
+    --light-purple: #87879D;
+    --ligh-blue: #8FE3F9;
+    --ligh-pink: #D9B8FF;
+    --white: #FAFAFA;
+}
+
+body{
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    width: 100vw;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 64px;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.header{
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 6vh auto;
+}
+
+.faces{
+    width: 100vw;
+    height: 25vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.faces .left{
+    width: 50vw;
+    position: absolute;
+    left: -16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.faces .left img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.item1, .item3{
+    margin-top: 4vh;
+}
+
+.item5{
+    margin-top: -4vh;
+}
+
+.faces .right{
+    width: 50vw;
+    position: absolute;
+    right: -16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.item8{
+    margin-top: 4vh;
+}
+
+.item10, .item12{
+    margin-top: -4vh;
+}
+
+.faces .right img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.head-text{
+    margin: 5vh 0 5vh 0;
+}
+
+.head-text p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--light-purple);
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 500;
+    margin: 3vh 6.4vw;
+}
+
+.title-text{
+    font-family: "Red Hat Display";
+    font-style: normal;
+    text-align: center;
+    color: var(--dark-purple);
+    width: 100%;
+    font-weight: 900;
+}
+
+.buttons{
+    width: 100vw;
+}
+
+.bigBtn, .btn{
+    height: 58px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 16px;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    border-radius: 29px;
+}
+
+.bigBtn{
+    background-color: var(--blue);
+    width: 193px;
+    margin: 16px auto; 
+}
+
+.bigBtn span{
+    color: var(--ligh-blue);
+}
+
+.bigBtn:hover{
+    background-color: #71C0D4;
+}
+
+#pC{
+    margin-top: 32px;
+    background-color: var(--purple);
+}
+
+#pC span{
+    color: var(--ligh-pink);
+    font-weight: 900;
+}
+
+#pC:hover{
+    background-color: #B18BDD;
+}
+
+.btn{
+    background-color: var(--purple);
+    width: 139px;
+    margin: auto;
+}
+
+.btn:hover{
+    background-color: #B18BDD;
+}
+
+.slide{
+    width: 100vw;
+    height: 140px;
+    margin: 6.2vh 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.line{
+    border-left: 1px solid var(--light-purple);
+    height: 84px;
+    opacity: 0.25;
+    position: absolute;
+    left: 50vw;
+    margin: 5vw 0;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    padding: 14px;
+    margin-top: 103px;
+    background: #fff;
+    border: 1px solid rgba(135, 135, 157, .25);
+    color: var(--light-purple);
+    text-align: center;
+    font-weight: 900;
+}
+
+.picture-cards{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(50px, auto);
+    gap: 24px;
+    margin: 24px;
+}
+
+.picture-cards .card1,.card2,.card3,.card4{
+    width: 151px;
+    height: 143px;
+    border-radius: 8px;
+}
+
+.card1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.card2{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card3{
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+
+.card4{
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+.info{
+    margin: 10vh 24px 0 24px;
+    text-align: center;
+}
+
+.info h4{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.info h3{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 900;
+    margin: 5vh 0;
+    color: var(--dark-purple);
+}
+
+.info p{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--light-purple);
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+    height: auto;
+}
+
+footer h3{
+    margin: 24px 0;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 900;
+}
+
+footer p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer img{
+    background: url(/starter-code/assets/images/footer-img.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
+
+.mask{
+    background-color: var(--blue);
+    margin-top: -52px;
+    padding: 10vh 24px;
+    color: var(--white);
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px){
+
+    /*First section*/
+    .faces{
+        height: 35vh;
+    }
+    
+    .faces .left{
+        left: -20px;
+    }
+
+    .faces .right{
+        right: -20px;
+    }
+
+    .faces .left img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .faces .right img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .item1, .item3{
+        margin-top: 55px;
+    }
+    
+    .item5{
+        margin-top: -55px;
+    }
+
+    .item8{
+        margin-top: 55px;
+    }
+    
+    .item10, .item12{
+        margin-top: -55px;
+    }
+
+    /*Second section*/
+    .first{
+        margin: 0 155px;
+    }
+    
+    .head-text p{
+        margin: 3vh 0;
+    }
+
+    .buttons{
+        margin: 0;
+        display: flex;
+        position: absolute;
+        left: 25vw;
+    }
+
+    .bigBtn{
+        margin: 0 8px;
+    }
+    .btn{
+        margin: 0 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Font */
+/* red-hat-display-regular - latin */
+@font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/red-hat-display-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/red-hat-display-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* red-hat-display-500 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('/starter-code/assets/font/red-hat-display-v7-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/starter-code/assets/font/red-hat-display-v7-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* red-hat-display-600 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('/starter-code/assets/font/red-hat-display-v7-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/starter-code/assets/font/red-hat-display-v7-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* red-hat-display-800 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('/starter-code/assets/font/red-hat-display-v7-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/starter-code/assets/font/red-hat-display-v7-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* red-hat-display-700 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('/starter-code/assets/font/red-hat-display-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/starter-code/assets/font/red-hat-display-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* red-hat-display-900 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('/starter-code/assets/font/red-hat-display-v7-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/starter-code/assets/font/red-hat-display-v7-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
