@@ -291,7 +291,7 @@ footer p{
     font-size: 18px;
 }
 
-footer img{
+footer{
     background: url(/starter-code/assets/images/footer-img.jpg);
     background-position: center;
     background-size: cover;
@@ -300,7 +300,7 @@ footer img{
 }
 
 .mask{
-    background-color: var(--blue);
+    background-color: rgba(77, 150, 169, .8);
     margin-top: -75px;
     padding: 10vh 24px;
     color: var(--white);
