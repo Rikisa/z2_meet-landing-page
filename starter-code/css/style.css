@@ -292,7 +292,7 @@ footer p{
 }
 
 footer{
-    background: url(/starter-code/assets/images/footer-img.jpg);
+    background: url(/assets/images/footer-img.jpg);
     background-position: center;
     background-size: cover;
     width: 100vw;
