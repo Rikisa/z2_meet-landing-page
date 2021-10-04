@@ -219,27 +219,33 @@ h2{
 }
 
 .picture-cards .card1,.card2,.card3,.card4{
-    width: 151px;
-    height: 143px;
     border-radius: 8px;
 }
 
 .card1{
+    width: 100%;
+    height: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
 .card2{
+    width: 100%;
+    height: 100%;
     grid-column: 2/2;
     grid-row: 1/2;
 }
 
 .card3{
+    width: 100%;
+    height: 100%;
     grid-column: 1/2;
     grid-row: 2/2;
 }
 
 .card4{
+    width: 100%;
+    height: 100%;
     grid-column: 2/2;
     grid-row: 2/2;
 }
@@ -306,8 +312,7 @@ footer{
     color: var(--white);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px){
-
+@media screen and (min-width: 768px) and (max-width: 999px){
     /*First section*/
     .faces{
         height: 35vh;
@@ -347,6 +352,7 @@ footer{
         margin-top: -55px;
     }
 
+    
     /*Second section*/
     
     .head-text{
@@ -373,35 +379,16 @@ footer{
 
     /*Picture cards*/
     .picture-cards{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 11px;
-        margin: 10vh 39px 39px 39px;
+        margin: 10vh 10vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: space-around;
     }
-
-    .card1{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .card2{
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .card3{
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .card4{
-        grid-column: 4;
-        grid-row: 1;
-    }
-
+    
     .picture-cards .card1,.card2,.card3,.card4{
-        width: 164px;
-        height: 156px;
         border-radius: 8px;
+        width:  155px;
+        height: 165px;
     }
 
     /*Info section*/
@@ -429,6 +416,66 @@ footer{
         margin: 0 auto;
     }
 
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1440px){
+    /*First section*/
+    .faces{
+        height: 35vh;
+    }
+    
+    .faces .left{
+        left: -20px;
+    }
+
+    .faces .right{
+        right: -20px;
+    }
+
+    .faces .left img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .faces .right img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .item1, .item3{
+        margin-top: 55px;
+    }
+    
+    .item5{
+        margin-top: -55px;
+    }
+
+    .item8{
+        margin-top: 55px;
+    }
+    
+    .item10, .item12{
+        margin-top: -55px;
+    }
+
+    .picture-cards{
+        margin: 10vh 10vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+    
+    .picture-cards .card1,.card2,.card3,.card4{
+        border-radius: 8px;
+        width:  205px;
+        height: 215px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation:landscape){
+    .faces{
+        height: 50vh;
+    }
 }
 
 @media screen and (min-width: 1441px){
@@ -597,55 +644,11 @@ footer{
     }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 900px) and (orientation:landscape){
+@media screen and (max-height: 900px) and (max-width: 1024px) and (orientation: landscape){
     .faces{
-        height: 100vh;
-    }
-    
-    .faces .left{
-        left: -20px;
-    }
-
-    .faces .right{
-        right: -20px;
-    }
-
-    .faces .left img{
-        width: 110px;
-        height: 110px;
-    }
-
-    .faces .right img{
-        width: 110px;
-        height: 110px;
-    }
-
-    .item1, .item3{
-        margin-top: 55px;
-    }
-    
-    .item5{
-        margin-top: -55px;
-    }
-
-    .item8{
-        margin-top: 55px;
-    }
-    
-    .item10, .item12{
-        margin-top: -55px;
-    }
-
-
-}
-
-@media screen and (min-width: 1024px) and (max-height: 900px) and (orientation:landscape){
-    .faces{
-        height: 50vh;
+        height: 80vh;
     }
 }
-
-
 
 
 
